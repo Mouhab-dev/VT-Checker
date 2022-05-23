@@ -35,10 +35,11 @@ print('
                                                                                        Version: 1.0
                                                                                  By: Mohab El-Banna
                                                                                  Github: Mouhab-dev   
-     ')
+     
+      ')
 
-user = input('Enter Your Username: ')#TODO To be removed when published
-passwd = getpass('Enter your Password: ')#TODO To be removed when published
+user = input('Enter Your Username: ')     #To be removed if using no proxy
+passwd = getpass('Enter your Password: ') #To be removed if using no proxy
 print()
 count = 1
 
