@@ -26,13 +26,13 @@ Project is created with:
 
 ## Features
 
-1. The Script can deal with most famous types of Hashes:
-* MD5
-* SHA1
-* SHA256
-2. Proxy compitable so it can be used by security teams in corporates, also you can disable proxy.
-3. Configured to handle two security devices (most probably Anti-Virus, EDR).
-4. Ability to reanalyze the hash to get the most recent scan results.
+* The Script can deal with most famous types of Hashes:
+  * MD5
+  * SHA1
+  * SHA256
+* Proxy compitable so it can be used by security teams in corporates, also you can disable proxy.
+* Configured to handle two security devices (most probably Anti-Virus, EDR).
+* Ability to reanalyze the hash to get the most recent scan results.
 
 ## Setup
 To run this project, install all the required libraries first, then confiure the python script as follows:
