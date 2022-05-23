@@ -6,47 +6,54 @@ in order to give you the latest security engines results.
 ## Table of contents
 * [General info](#general-info)
 * [Libraries](#libraries)
+* [Features] (#Features)
 * [Setup](#setup)
 * [Test](#test)
 
 ## General info
 VT Checker: Enables you check bulk of different types of hashes with the most recent results, also you can feed it with
-the name of your security products and it will ignore hashes if it was detected by your security controls.
+the name of your security products and it will ignore hashes if it was detected by your security controls in order not to block them
+in your environment.
 
-The Script can deal with all types of Hashes:
-* MD5
-* SHA1
-* SHA256
+
 
 ## Libraries
 Project is created with:
-* base64.
-* json.
-* requests.
-* getpass.
-* csv.
-* re.
-* pandas.
+
+* requests
+* time
 * python 3.6 or higher.
 
-## Setup
-To run this project, install all the required libraries first then confiure the python script as follows:
+## Features
 
-* Update the **host** variable with your Qradar's IP Address.
-* Configure the **search_period** variable to your liking, please follow qradar's documentation in order not to break the search query.
-* Adjust **each search query** to your corresponding field name in your environment.
+1. The Script can deal with most famous types of Hashes:
+* MD5
+* SHA1
+* SHA256
+2. Proxy compitable so it can be used by security teams in corporates, also you can disable proxy.
+3. Configured to handle two security devices (most probably Anti-Virus, EDR).
+4. Ability to reanalyze the hash to get the most recent scan results.
+
+## Setup
+To run this project, install all the required libraries first, then confiure the python script as follows:
+
+* Update **x-apikey** variable with your VT API Key.
+* 
+* Update the following variables with your security controls in your evironment:
+  * av_engine_1 = 1st (AV or EDR)
+  * av_engine_2 = 2nd (AV or EDR)
 * Then, Run the script using the following command:
 
 ```
-$ python qradar_iocs.py
+$ python vt.py
 ```
 
 ## Test
 
-Tested with a set of IOCs:
+Tested with a set of Hashes:
 
 ```
-C:\Users\<current user>\Desktop> python qradar_iocs.py
+C:\Users\<current user>\Desktop> python vt.py
 Welcome to 
  __   __        __        __         __   __   __      __   ___ ___  ___  __  ___    __       
 /  \ |__)  /\  |  \  /\  |__) .   | /  \ /  ` /__`    |  \ |__   |  |__  /  `  |  | /  \ |\ |
@@ -57,7 +64,3 @@ Welcome to
                                                                            
 Password:
 ```
-
-
-
-
