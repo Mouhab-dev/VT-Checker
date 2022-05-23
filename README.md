@@ -6,7 +6,7 @@ in order to give you the latest security engines results.
 ## Table of contents
 * [General info](#general-info)
 * [Libraries](#libraries)
-* [Features] (#Features)
+* [Features](#Features)
 * [Setup](#setup)
 * [Test](#test)
 
